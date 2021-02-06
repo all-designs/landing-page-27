@@ -1,0 +1,1049 @@
+            /*+-----------------------------------------------------------+
+  |                                                           |
+  |    Template Name: Syrah - Wine Shop Html Template         |
+  |    Author: themesitem                                     |
+  |    Author Email: themesitem.cit@gmail.com                 |
+  |    Version: 1.00                                          |
+  |                                                           |
+  +-----------------------------------------------------------+*/
+            /* CSS Index 
+-----------------------------------
+1. Theme default css
+2. Index Page 
+        |----> Header css
+        |----> Sticky header css
+        |----> Banner Css
+        |----> About Css
+        |----> 
+        |----> 
+        |----> 
+        |----> 
+        |----> Footer Css
+        |----> Copyright Css
+5. Contact page
+        |----> Left img css
+        |----> Contact-form Css
+6. Error404 Page
+*/
+            /*===========================
+    1. Theme default css 
+===========================*/
+            
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #333;
+            }
+            
+            .img {
+                max-width: 100%;
+                -webkit-transition: all 0.3s ease-out 0s;
+                transition: all 0.3s ease-out 0s;
+                vertical-align: middle;
+            }
+            
+            a:focus,
+            input:focus,
+            textarea:focus,
+            button:focus {
+                text-decoration: none;
+                outline: none;
+            }
+            
+            span,
+            a {
+                display: inline-block;
+                text-decoration: none;
+                -webkit-transition: all 0.3s linear;
+                transition: all 0.3s linear;
+            }
+            
+            a:focus,
+            a:hover {
+                text-decoration: none;
+                outline: none;
+            }
+            
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: 'Montserrat', sans-serif;
+                line-height: 1.2;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                color: #003059;
+                font-weight: 500;
+            }
+            
+            h1 {
+                font-weight: 500;
+            }
+            
+            h2 {
+                font-size: 36px;
+            }
+            
+            h3 {
+                font-size: 28px;
+            }
+            
+            h4 {
+                font-size: 22px;
+            }
+            
+            h5 {
+                font-size: 18px;
+            }
+            
+            h6 {
+                font-size: 16px;
+            }
+            
+            ul,
+            ol {
+                margin: 0px;
+                padding: 0px;
+                list-style-type: none;
+            }
+            
+            .bg_cover {
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+            }
+            
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                margin-bottom: 15px;
+                color: #999999;
+                font-family: 'Montserrat', sans-serif;
+            }
+            /* Google Fonts Css */
+            
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+            /*... Font Family ...*/
+            
+             :root {
+                --headingfont: 'Montserrat Alternates', sans-serif;
+                --textfont: 'Lato', sans-serif;
+            }
+            /*... Theme color ...*/
+            
+             :root {
+                --themecolor: #c661fa;
+                --textcolor_whait: #ffffff;
+                --textcolor_Gray20: #333333;
+                --textcolor_Gray60: #999999;
+                --textcolor_Gray68: #444444;
+            }
+            /*... All Button Style ...*/
+            
+            .theme_btn {
+                background: var(--themecolor);
+                padding: 10px 20px;
+                color: #fff;
+                margin-top: 60px;
+                border: 2px solid var(--themecolor);
+                transition: all .3s linear;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -ms-transition: all .3s linear;
+                -o-transition: all .3s linear;
+                font-weight: 700;
+            }
+            
+            .theme_btn:hover {
+                background: transparent;
+                border: 2px solid #5e5e5e;
+                color: var(--themecolor);
+            }
+            /*... All Section Title Style ...*/
+            
+            .section_title {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            
+            .section_title.title_left {
+                text-align: left;
+            }
+            
+            .section_title h2 {
+                font-size: 40px;
+                position: relative;
+            }
+            
+            .section_title h2::before,
+            .section_title.title_left h2::before {
+                position: absolute;
+                content: "";
+                height: 3px;
+                background: var(--themecolor);
+                width: 60px;
+                top: -20px;
+            }
+            
+            .section_title h2::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .section_title.title_left h2::before {
+                left: 30px;
+            }
+            
+            .section_title p {}
+            /*===========================
+    3. Index Page css 
+===========================*/
+            /*... Header part css start ...*/
+            
+            #header {
+                background: #383838;
+                height: 80px;
+                position: relative;
+            }
+            
+            #header .header_left {
+                text-align: left;
+                color: #ffffff;
+                font-size: 16px;
+                font-family: "Lato", sans-serif;
+                line-height: 80px;
+            }
+            
+            #header .header_left p {
+                color: #bbbaba;
+                font-size: 16px;
+                font-family: "Lato", sans-serif;
+                display: inline;
+                margin-right: 40px;
+            }
+            
+            #header .header_left a {
+                padding: 14px 16px;
+                background: var(--themecolor);
+                display: inline;
+                color: var(--textcolor_whait);
+            }
+            
+            #header .header_right {
+                text-align: end;
+                line-height: 80px;
+                display: flex;
+            }
+            
+            #header .header_right .social_icon {
+                display: inline;
+            }
+            
+            #header .header_right .social_icon a {
+                margin: 0 15px;
+                color: var(--textcolor_whait);
+            }
+            
+            #header .header_right .social_icon a i {}
+            
+            #header a.theme_btn {
+                text-align: center;
+                background: var(--themecolor);
+                margin-left: 30px;
+                color: var(--textcolor_whait);
+                font-size: 17px;
+                padding: 0 54px;
+                margin-top: 0;
+            }
+            
+            #header a.theme_btn:hover {
+                border: 2px solid var(--themecolor);
+            }
+            /*... menu part css ...*/
+            
+            .menu_bar {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                right: 0;
+                z-index: 999;
+            }
+            
+            .navbar {
+                background: #ffffff;
+                margin: 0;
+                padding: 0 35px;
+            }
+            
+            .navbar .navbar-brand {
+                width: 150px;
+                padding: 40px 0;
+            }
+            
+            .navbar .main_menu .nav-item .nav-link {
+                color: #444444;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: "Lato", sans-serif;
+                padding: 0;
+                text-transform: uppercase;
+                transition: all .3s linear;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -ms-transition: all .3s linear;
+                -o-transition: all .3s linear;
+                position: relative;
+                margin: 0 20px;
+            }
+            
+            .navbar .main_menu .nav-item .nav-link::before {
+                position: absolute;
+                content: "";
+                height: 3px;
+                width: 0%;
+                background: var(--themecolor);
+                bottom: -33px;
+                transition: all .4s linear;
+                -webkit-transition: all .4s linear;
+                -moz-transition: all .4s linear;
+                -ms-transition: all .4s linear;
+                -o-transition: all .4s linear;
+            }
+            
+            .navbar .main_menu .nav-item .nav-link.active::before,
+            .navbar .main_menu .nav-item .nav-link:hover::before {
+                width: 100%;
+            }
+            
+            .navbar .navbar-collapse {
+                position: relative;
+                padding-top: 17px;
+            }
+            
+            .navbar .main_menu .nav-item button {
+                border: 0;
+                padding: 0;
+                font-size: 17px;
+                color: #383838;
+                margin-left: 35px;
+            }
+            
+            .navbar .main_menu .nav-item button:hover {
+                background: unset;
+            }
+            
+            .navbar .navbar-collapse .call_now {
+                text-align: center;
+            }
+            
+            .navbar .navbar-collapse .call_now img {
+                margin-top: -25px;
+            }
+            
+            .navbar .navbar-collapse .call_now span {
+                display: block;
+                margin-top: 5px;
+            }
+            /*... Header part css end ...*/
+            /*===========================
+    Index Page Css Start 
+===========================*/
+            /*=========================================
+  <-------- BANNER PART CSS START -------->
+==========================================*/
+            
+            .banner_area {
+                position: relative;
+                background: #5e5e5e;
+                padding: 290px 0;
+            }
+            
+            .banner_area::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgb(94, 94, 94, .6);
+            }
+            
+            .banner_area .banner_text {
+                position: relative;
+                z-index: 99;
+            }
+            
+            .banner_area .banner_text h1 {
+                font-size: 54px;
+                color: var(--textcolor_whait);
+                padding-right: 360px;
+            }
+            
+            .banner_area .banner_text .banner_btn {
+                margin-top: 40px;
+                margin-right: 50px;
+                padding: 15px 25px;
+                background: var(--themecolor);
+                font-size: 18px;
+                color: #fff;
+            }
+            
+            .banner_area .banner_text i {
+                font-size: 45px;
+                vertical-align: middle;
+                color: var(--textcolor_whait);
+            }
+            
+            .banner_area .banner_text .banner_btn:hover {}
+            
+            .banner_area .slider_dots {
+                position: absolute;
+                bottom: 60px;
+                left: 30px;
+            }
+            
+            .banner_area .slider_dots button {
+                width: 15px;
+                height: 15px;
+                margin-bottom: 5px;
+                background: #ffffff;
+                border: 0;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+            
+            .banner_area .slider_dots button.active {
+                border: 1px solid #c661fa;
+                background: #c661fa;
+            }
+            /*=========================================
+  <--------  BANNER PART CSS END  -------->
+==========================================*/
+            
+            #know_more {
+                margin-bottom: 130px;
+            }
+            
+            #know_more .section_title {
+                margin-top: 100px;
+            }
+            
+            #know_more .get_down {
+                text-align: center;
+            }
+            
+            #know_more .get_down h3 {
+                margin: 0;
+                background: var(--themecolor);
+                padding: 45px 0;
+                font-size: 24px;
+                color: var(--textcolor_whait);
+            }
+            /*=========================================
+  <--------  BANNER PART CSS END  -------->
+==========================================*/
+            
+            #our_insuranc {
+                margin-bottom: 130px;
+            }
+            
+            #our_insuranc .single_item {
+                height: 170px;
+                overflow: hidden;
+                position: relative;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                transition: all .3s linear;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -ms-transition: all .3s linear;
+                -o-transition: all .3s linear;
+            }
+            
+            #our_insuranc .single_item:hover {
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            }
+            
+            #our_insuranc .single_item .overlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                background: rgba(238, 238, 238, 0.699);
+                text-align: center;
+            }
+            
+            #our_insuranc .single_item .overlay img {
+                padding-top: 40px;
+                padding-bottom: 10px;
+            }
+            
+            #our_insuranc .single_item .overlay span {
+                display: block;
+                color: #000000;
+            }
+            /*=========================================
+  <--------  PART CSS START -------->
+==========================================*/
+            
+            #get_start {}
+            
+            #get_start .get_start_box {}
+            
+            #get_start .get_start_box a {
+                margin-right: 20px;
+            }
+            
+            #get_start .get_start_box span {
+                vertical-align: middle;
+            }
+            
+            #get_start .get_start_box span i {
+                color: #8e8e8e;
+                margin-right: 5px;
+                font-size: 22px;
+            }
+            
+            #get_start .get_start_box span p {
+                display: inline;
+                font-size: 25px;
+            }
+            /*=========================================
+  <---------  PART CSS END --------->
+==========================================*/
+            
+            #counter {
+                padding: 100px 0;
+                background: var(--themecolor);
+                margin-bottom: 140px;
+                margin-top: 50px;
+            }
+            
+            #counter .single_count {
+                color: var(--textcolor_whait);
+                text-align: center;
+            }
+            
+            #counter .single_count img {
+                margin-bottom: 20px;
+            }
+            
+            #counter .single_count p {
+                margin-bottom: 25px;
+                font-size: 22px;
+                color: var(--textcolor_whait);
+            }
+            
+            #counter .single_count span {
+                font-size: 40px;
+                font-weight: 700;
+            }
+            /*=========================================
+  <---------  GET-MORE CSS --------->
+==========================================*/
+            
+            #get_more {
+                margin-bottom: 140px;
+            }
+            
+            #get_more .section_title h2 {
+                padding-right: 44px;
+            }
+            
+            #get_more .theme_btn {
+                padding: 10px 35px;
+                margin-top: 90px;
+            }
+            /*=========================================
+  <---------  SERVICES CSS END --------->
+==========================================*/
+            
+            #service {
+                padding: 130px 0;
+                position: relative;
+                margin-bottom: 130px;
+            }
+            
+            #service::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.801);
+                top: 0;
+                left: 0;
+            }
+            
+            #service .single_service {
+                padding: 45px 25px 45px 50px;
+                background: #fff;
+                position: relative;
+                z-index: 9;
+            }
+            
+            #service .single_service img {
+                margin-bottom: 35px;
+            }
+            
+            #service .single_service h3 {
+                margin-bottom: 20px;
+            }
+            
+            #service .single_service p {}
+            
+            #service .single_service a {
+                margin-top: 20px;
+            }
+            
+            #service .single_service a i {
+                margin-right: 15px;
+                color: var(--themecolor);
+                font-size: 30px;
+                line-height: 0;
+                vertical-align: sub;
+            }
+            
+            #service .single_service a span {
+                font-size: 23px;
+                color: #000;
+                position: relative;
+            }
+            
+            #service .single_service a span::before {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 3px;
+                background: var(--themecolor);
+                left: 0;
+                bottom: 0;
+                transition: all .3s linear;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -ms-transition: all .3s linear;
+                -o-transition: all .3s linear;
+            }
+            
+            #service .single_service a span:hover:before {
+                width: 100%;
+            }
+            /*=========================================
+  <---------  CONTUCT-US CSS END --------->
+==========================================*/
+            
+            #contuct_us {
+                margin-bottom: 140px;
+            }
+            
+            #contuct_us .section_title.title_left {
+                padding-right: 420px;
+            }
+            
+            #contuct_us .section_title.title_left h2 span {
+                color: var(--themecolor);
+            }
+            
+            #contuct_us .contuct_image {
+                width: 85%;
+                margin-top: 20px;
+                position: relative;
+            }
+            
+            #contuct_us .contuct_image::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                top: 35px;
+                left: 35px;
+                background: #f0e2f8;
+                z-index: -1;
+            }
+            
+            #contuct_us .contuct_from {}
+            
+            #contuct_us .contuct_from h4 {
+                font-size: 28px;
+                color: #000000;
+                padding-right: 180px;
+                margin-bottom: 75px;
+            }
+            
+            #contuct_us .contuct_from form {}
+            
+            #contuct_us .contuct_from form select {
+                display: block;
+                width: 80%;
+                padding: 10px 5px;
+                margin-bottom: 41px;
+                border: 2px solid #eeee;
+            }
+            
+            #contuct_us .contuct_from form select:focus {
+                outline: none;
+            }
+            
+            #contuct_us .contuct_from form select option {}
+            
+            #contuct_us .contuct_from form input {
+                display: block;
+                width: 80%;
+                padding: 10px 5px;
+                margin-bottom: 41px;
+                border: 2px solid #eeee;
+            }
+            /*=========================================
+  <---------  CLIENT CSS END --------->
+==========================================*/
+            
+            #client {
+                margin-bottom: 140px;
+            }
+            
+            #client .single_client {}
+            
+            #client .single_client .profile_img {
+                display: flex;
+                margin-left: 105px;
+                margin-bottom: 30px;
+            }
+            
+            #client .single_client .profile_img .p_img {
+                width: 80px;
+                height: 80px;
+                margin-right: 16px;
+                overflow: hidden;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+            
+            #client .single_client .profile_img .p_img img {}
+            
+            #client .single_client .profile_img h5 {}
+            
+            #client .single_client .profile_img span {}
+            
+            #client .single_client .comment {
+                text-align: center;
+                padding: 35px 30px 20px;
+                border: 1px solid #eeee;
+                border-radius: 2px;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                -o-border-radius: 2px;
+                position: relative;
+            }
+            
+            #client .single_client .comment::before {
+                position: absolute;
+                content: "";
+                top: -40px;
+                left: 50%;
+                transform: translateX(-50%);
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid #f1f1f1;
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+            }
+            
+            #client .single_client .comment .icon {
+                text-align: end;
+            }
+            
+            #client .single_client .comment .icon img {}
+            /*=========================================
+  <--------- NEWS PART CSS END --------->
+==========================================*/
+            
+            #news {
+                margin-bottom: 140px;
+            }
+            
+            #news .section_title {
+                margin-right: 295px;
+            }
+            
+            #news .theme_btn {}
+            
+            #news .single_news a {
+                margin-top: 20px;
+            }
+            
+            #news .single_news a i {
+                margin-right: 15px;
+                color: var(--themecolor);
+                font-size: 30px;
+                line-height: 0;
+                vertical-align: sub;
+            }
+            
+            #news .single_news a span {
+                font-size: 23px;
+                color: #000;
+                position: relative;
+            }
+            
+            #news .single_news a span::before {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 3px;
+                background: var(--themecolor);
+                left: 0;
+                bottom: 0;
+                transition: all .3s linear;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -ms-transition: all .3s linear;
+                -o-transition: all .3s linear;
+            }
+            
+            #news .single_news a span:hover:before {
+                width: 100%;
+            }
+            /*=========================================
+                <--------- MAP PART CSS END --------->
+            ==========================================*/
+            
+            #map {
+                padding: 80px 0;
+                margin-bottom: 140px;
+            }
+            
+            #map .map_box {
+                margin-right: 100px;
+                height: 375px;
+            }
+            
+            #map .quick_contuct {
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0px 0px 37px 0px rgba(156, 156, 156, 0.35);
+                padding: 45px 50px 70px 50px;
+                text-align: center;
+            }
+            
+            #map .quick_contuct h5 {
+                margin-bottom: 70px;
+                position: relative;
+            }
+            
+            #map .quick_contuct h5::before {
+                position: absolute;
+                content: "";
+                width: 50px;
+                background: var(--themecolor);
+                height: 2px;
+                bottom: -17px;
+                left: 50%;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+            }
+            
+            #map .quick_contuct .email {
+                margin-bottom: 50px;
+                text-align: left;
+            }
+            
+            #map .quick_contuct .email img {
+                margin-right: 15px;
+                margin-top: -30px;
+            }
+            
+            #map .quick_contuct .email span {}
+            
+            #map .quick_contuct .email span label {}
+            
+            #map .quick_contuct .email span p {}
+            
+            #map .quick_contuct .phone {
+                text-align: left;
+            }
+            
+            #map .quick_contuct .phone img {
+                margin-right: 15px;
+            }
+            
+            #map .quick_contuct .phone span {}
+            /*=========================================
+            <---------  PART CSS END --------->
+            ==========================================*/
+            /*<----------------  FOOTER  PART CSS START  ---------------->*/
+            
+            #footer {
+                padding-bottom: 80px;
+                position: relative;
+            }
+            
+            #footer::before {
+                position: absolute;
+                content: "";
+                width: 400px;
+                height: 2px;
+                background: #dddddd;
+                left: 0;
+                bottom: 8px;
+                width: 100%;
+            }
+            
+            #footer .footer_logo {
+                margin-bottom: 65px;
+            }
+            
+            #footer p {
+                margin-bottom: 80px;
+            }
+            
+            #footer .social_icon {}
+            
+            #footer .social_icon a {
+                margin-right: 35px;
+                color: #8e8e8e;
+            }
+            
+            #footer .quick_info {}
+            
+            #footer .quick_info label {
+                color: #000000;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            
+            #footer .quick_info p {
+                margin-bottom: 0;
+            }
+            
+            #footer .quick_info .address {
+                margin-bottom: 30px;
+            }
+            
+            #footer .quick_info .email {
+                margin-bottom: 30px;
+            }
+            
+            #footer .quick_info .houre {
+                margin-bottom: 30px;
+                margin-right: 65px;
+            }
+            
+            #footer .footer_blog {}
+            
+            #footer .footer_blog ul {}
+            
+            #footer .footer_blog ul li {
+                margin-bottom: 30px;
+                padding-right: 30px;
+            }
+            
+            #footer .footer_blog ul li a {
+                color: #8e8e8e;
+                transition: all .3s linear;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -ms-transition: all .3s linear;
+                -o-transition: all .3s linear;
+            }
+            
+            #footer .footer_blog ul li a:hover {
+                color: var(--themecolor);
+            }
+            /*===========================
+                FOOTER-NAVE-PART CSS 
+            ===========================*/
+            
+            #foote_nave {
+                padding: 70px 0;
+            }
+            
+            #foote_nave ul {}
+            
+            #foote_nave ul li {
+                display: inline-block;
+            }
+            
+            #foote_nave ul li a {
+                text-transform: uppercase;
+                margin-right: 10px;
+                color: #000000;
+            }
+            
+            #foote_nave .subscribe_box {}
+            
+            #foote_nave .subscribe_box input {
+                padding: 10px;
+                border: 0;
+                width: 78%;
+                border-bottom: 2px solid #ddd;
+            }
+            
+            #foote_nave .subscribe_box button {
+                font-size: 18px;
+                border: 0;
+                background: transparent;
+                margin-left: -32px;
+                color: var(--themecolor);
+            }
+            
+            #footer_bottom {
+                text-align: center;
+                padding: 30px 0;
+                background: #f5f5f5;
+            }
+            
+            #footer_bottom p {
+                padding: 0;
+                margin: 0;
+            }
+            /*===========================
+                COPYRIGHT-PART CSS 
+            ===========================*/
+            /*<-----------------  FOOTER  PART CSS END  ----------------->*/
+            /* =========================----- Back-to-top button css -----====================== */
+            
+            .back_to_top {
+                position: fixed;
+                bottom: 40px;
+                right: 40px;
+                background: #1D2228;
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                font-size: 28px;
+                color: #fff;
+                text-align: center;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                transition: all .4s linear;
+                -webkit-transition: all .4s linear;
+                -moz-transition: all .4s linear;
+                -ms-transition: all .4s linear;
+                -o-transition: all .4s linear;
+            }
+            
+            .back_to_top:hover {
+                background: #cf851e;
+                color: #fff;
+            }

@@ -1,0 +1,126 @@
+/* Normal desktop :1200px. */
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    /*======================
+    Index Page Css
+========================*/
+}
+
+
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /*======================
+    Index Page Css
+========================*/
+    .header_top .navbar-brand img {
+        height: 70px;
+    }
+    .header_top .universal_nave button {
+        padding: 10px 10px;
+    }
+    .navbar .navbar-collapse .navbar-nav .nav-item {
+        padding: 10px 66px;
+    }
+    .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+        font-size: 15px;
+    }
+    .header_top .universal_nave .jobs .modal-body {
+        right: -217px;
+    }
+}
+
+
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /*======================
+    Index Page Css
+========================*/
+    .header_top {
+        display: none;
+    }
+    .header_area {
+        background: #fff;
+    }
+    .header_area .navbar-brand {
+        margin-right: auto;
+        padding: 20px 0px;
+    }
+    .banner_area .banner_bg img {
+        height: 310px;
+    }
+    .banner_area .jobs_banner {
+        display: none;
+    }
+    .banner_area .banner_text {
+        padding-top: 110px;
+        padding-bottom: 100px;
+    }
+    .banner_area .banner_text h1 {
+        margin-bottom: 0px;
+        font-size: 50px;
+        position: relative;
+        z-index: 99;
+    }
+}
+
+
+/* small mobile :320px. */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /*======================
+    Index Page Css
+========================*/
+    .header_top {
+        display: none;
+    }
+    .header_area {
+        background: #fff;
+    }
+    .header_area .navbar-brand {
+        margin-right: auto;
+        padding: 20px 0px;
+    }
+    .navbar .navbar-expand-btns {
+        position: absolute;
+        right: 0;
+        display: flex;
+    }
+    .navbar .navbar-expand-btns button {
+        border: 0;
+        background: transparent;
+        margin-left: 10px;
+    }
+    .navbar .navbar-expand-btns button i {
+        color: #584FA4;
+        font-size: 35px;
+    }
+    .navbar .navbar-expand-btns .quick_search {}
+    .navbar .navbar-expand-btns .quick_search i {
+        font-size: 25px;
+    }
+    .navbar .navbar-expand-btns .navbar-toggler {}
+}
+
+
+/* Large Mobile :480px. */
+
+@media only screen and (max-width: 575.98px) {
+    /*======================
+    Index Page Css
+========================*/
+    .header_top {
+        display: none;
+    }
+    .header_area {
+        background: #fff;
+    }
+    .header_area .navbar-brand {
+        margin-right: auto;
+        padding: 20px 0px;
+    }
+    .navbar-brand img {
+        height: 35px;
+    }
+}

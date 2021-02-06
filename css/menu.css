@@ -1,0 +1,158 @@
+/*=========================== Index Page Header ===========================*/
+
+
+/*=========================================
+  <---------  HEADER CSS START  ---------->
+==========================================*/
+
+header {}
+
+
+/*----------------- main menu css start -----------------*/
+
+.menu {
+    background: #1b1740;
+}
+
+.menu .navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar .navbar-nav {}
+
+.navbar .navbar-nav .nav-item {}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+/*----------------- main menu css end -----------------*/
+
+
+/*-------------- toggler menu css start ---------------*/
+
+.menu .toggle_navbar {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+    background: #1b1740;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.menu .toggle_navbar .navbar-nav {
+    padding-top: 50px;
+}
+
+.toggle_navbar .navbar-nav .nav-item {
+    padding: 15px;
+    padding-left: 25px;
+}
+
+.toggle_navbar .navbar-nav .nav-item.dropdown {}
+
+.toggle_navbar .navbar-nav .nav-item.dropdown .dropdown-toggle::after {
+    right: 25px;
+    position: absolute;
+    top: 50%;
+}
+
+.toggle_navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
+    background: #28235d;
+    width: 93%;
+    padding: 15px 0px;
+}
+
+.toggle_navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+    padding: 15px 1.5rem;
+    color: #ffffff;
+}
+
+.toggle_navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    background: #6baac1;
+}
+
+.menu .toggle_navbar .navbar-nav .nav-item:hover {
+    background: #6baac1;
+}
+
+.menu .toggle_navbar .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu .toggle_navbar .close {
+    position: absolute;
+    color: #1b1740;
+    right: 15px;
+    top: 15px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.menu .toggle_navbar.show {
+    display: block;
+}
+
+
+/*---------------- toggler menu css start ----------------*/
+
+
+/*===========================
+     STICKY HEADER CSS 
+=============================*/
+
+
+/*
+.header_area.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999999;
+	box-shadow: 0px 0px 191px 0px rgba(0, 0, 0, 0.06);
+
+}
+
+.header_area.sticky .navbar {
+	background: #1D2228;
+	animation: stickyani 8s;
+	-webkit-animation: stickyani 2s;
+	position: absolute;
+	padding-top: 0;
+}
+
+
+@keyframes stickyani {
+	from {
+		transform: translateY(-100%);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
+*/
+
+
+/*=========================================
+  <----------    HEADER CSS END   -------->
+==========================================*/
