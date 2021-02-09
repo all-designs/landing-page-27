@@ -16,17 +16,12 @@
     .header_top .navbar-brand img {
         height: 70px;
     }
-    .header_top .universal_nave button {
-        padding: 10px 10px;
-    }
+    
     .navbar .navbar-collapse .navbar-nav .nav-item {
-        padding: 10px 66px;
+      
     }
     .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
         font-size: 15px;
-    }
-    .header_top .universal_nave .jobs .modal-body {
-        right: -217px;
     }
 }
 
